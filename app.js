@@ -6,6 +6,8 @@ const PORT = 8000;
 
 require('dotenv').config();
 
+const DarkSideRoute = require('./routes/DarkSide');
+app.use('DarkSide', DarkSideRoute);
 app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
