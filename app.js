@@ -8,6 +8,8 @@ require('dotenv').config();
 
 const DarkSideRoute = require('./routes/DarkSide');
 const HanSolo  = require('./controllers/HanSolo');
+const Anakin  = require('./controllers/Anakin');
+app.use('/Anakin', Anakin);
 app.use('/solo', HanSolo);
 app.use('DarkSide', DarkSideRoute);
 app.use(cors())
