@@ -7,6 +7,8 @@ const PORT = 8000;
 require('dotenv').config();
 
 const DarkSideRoute = require('./routes/DarkSide');
+const HanSolo  = require('./controllers/HanSolo');
+app.use('/solo', HanSolo);
 app.use('DarkSide', DarkSideRoute);
 app.use(cors())
 app.use(express.json());
