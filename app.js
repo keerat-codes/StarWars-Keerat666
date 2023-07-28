@@ -11,6 +11,8 @@ const HanSolo  = require('./controllers/HanSolo');
 const Anakin  = require('./controllers/Anakin');
 const sw  = require('./controllers/sw');
 const PalpatineRoute = require('./routes/Palpatine');
+const StarWarsJokes  = require('./controllers/StarWarsJokes');
+app.use('/swJoke', StarWarsJokes);
 app.use('Palpatine', PalpatineRoute);
 app.use('/darthVader', sw);
 app.use('/Anakin', Anakin);
