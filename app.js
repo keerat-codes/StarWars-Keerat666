@@ -10,6 +10,8 @@ const DarkSideRoute = require('./routes/DarkSide');
 const HanSolo  = require('./controllers/HanSolo');
 const Anakin  = require('./controllers/Anakin');
 const sw  = require('./controllers/sw');
+const PalpatineRoute = require('./routes/Palpatine');
+app.use('Palpatine', PalpatineRoute);
 app.use('/darthVader', sw);
 app.use('/Anakin', Anakin);
 app.use('/solo', HanSolo);
